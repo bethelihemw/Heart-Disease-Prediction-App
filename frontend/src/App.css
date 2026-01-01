@@ -7,7 +7,7 @@
 /* Page background */
 body {
   /* background: linear-gradient(135deg, #667eea, #764ba2); */
-  background-image: url(heart\ red.jpg);
+  background-image: url(image.png);
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -43,7 +43,7 @@ form {
 label {
   margin-top: 12px;
   margin-bottom: 4px;
-  font-size: 14px;
+  font-size: 17px;
   color: white;
   
 }
@@ -51,10 +51,10 @@ label {
 /* Inputs & selects */
 input,
 select {
-  background: transparent;
+  background: rgba(12, 12, 12, 0.3);
   padding: 10px;
   border-radius: 6px;
-  border: 3px solid #570303;
+  border: 1px solid #afdef3;
   font-size: 14px;
   transition: 0.2s ease;
   color: white;
@@ -62,16 +62,19 @@ select {
 
 input:focus,
 select:focus {
+  color: rgb(255, 255, 255);
   outline: none;
-  border-color: #667eea;
+  border-color: #87ebf8;
   box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+  font-weight: bold;
 }
 
 /* Button */
 button {
   margin-top: 20px;
+  font-weight: bold;
   padding: 12px;
-  background: #667eea;
+  background: #028c9e;
   color: white;
   font-size: 16px;
   border: none;
@@ -81,7 +84,7 @@ button {
 }
 
 button:hover {
-  background: #5563d6;
+  background: #02545f;
 }
 
 button:disabled {
@@ -96,19 +99,21 @@ button:disabled {
   border-radius: 8px;
   text-align: center;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .result.success {
+  font-weight: bold;
   background: #e6f7ec;
   color: #2e7d32;
-  border: 1px solid #2e7d32;
+  border: 2px solid #2e7d32;
 }
 
 .result.error {
+  font-weight: bold;
   background: #fdecea;
   color: #c62828;
-  border: 1px solid #c62828;
+  border: 2px solid #c62828;
 }
 
 
